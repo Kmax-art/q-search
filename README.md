@@ -1,6 +1,17 @@
 # Quantum-walk search in Motion (arXiv.)
 
----------------
+This repository contains code related to the work presented in the paper titled 'Quantum Walk Search in Motion.' The code provides implementations, data, and tools used in the research project described in the paper.
+
+
+## Paper Citation
+If you use this code in your work, please cite our paper:
+
+## Usage
+
+The uses of code are straight forward, and only need to run the full python scripts for different algorithms discussed in article. The essential libraries such as numpy, scipy and matplotlib are used. 
+
+## Description
+
 
 
 * Essential_Function.py : This contain few useful function such as vector norm, complex conjugation etc. that will used throughout the notebook.
@@ -27,3 +38,7 @@ Fig. (b) : Probability distribution at $t_\text{op}$ step for different layers w
 ![](Plots/movie.gif)
 
 Fig. (c) : Probability distribution with time-steps in tracking problem
+
+
+## Contact
+For questions or further information, please contact Himanshu Sahu at [himanshusah1@iisc.ac.in].
