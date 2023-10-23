@@ -8,15 +8,15 @@
 
 * QWSA_Multipoint.py : We extend the algorithm with proposed mathod as give in paper for multiple point search algorithm that reveals the marked point as well as their order. 
 
-![Probability distribution at $t_\text{op}$ step for different layers with single marked point in each layer found using quantum-search algorithm single-layer amplification](Plots/single_layer_OBC_MAT_page-0001.jpg)
+![](Plots/single_layer_OBC_MAT_page-0001.jpg)
 
-![Probability distribution at $t_\text{op}$ step for different layers with single marked point in each layer found using quantum-search algorithm single-layer amplification](Plots/single_layer_PBC_MAT_page-0001.jpg)
+![](Plots/single_layer_PBC_MAT_page-0001.jpg)
 
 Fig. (a) : Probability distribution at $t_\text{op}$ step for different layers with single marked point in each layer found using quantum-search algorithm single-layer amplification Top : Open boundary condition Bottom : Periodic boundary condition
 
-![Probability distribution at $t_\text{op}$ step for different layers with single marked point in each layer found using quantum-search algorithm single-layer amplification](Plots/multi_layer_OBC_MAT_page-0001.jpg)
+![](Plots/multi_layer_OBC_MAT_page-0001.jpg)
 
-![Probability distribution at $t_\text{op}$ step for different layers with single marked point in each layer found using quantum-search algorithm multi-layer amplification](Plots/multi_layer_PBC_MAT_page-0001.jpg)
+![](Plots/multi_layer_PBC_MAT_page-0001.jpg)
 
 Fig. (b) : Probability distribution at $t_\text{op}$ step for different layers with single marked point in each layer found using quantum-search algorithm multi-layer amplification Top : Open boundary condition Bottom : Periodic boundary condition
 
