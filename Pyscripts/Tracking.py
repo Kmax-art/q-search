@@ -85,7 +85,7 @@ T = 8  # Amplification Time
 
 m = int(T/τ) # number of layers
 
-Tf = 20 # final time 
+Tf = 500 # final time 
 ti = 0 # real time 
 
 
@@ -152,42 +152,42 @@ for i in tqdm(range(Tf)):
     
     
 
+
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 
+# Define your variables Tf, m, and P here
 
-# ims is a list of lists, each row is a list of artists to draw in the
-# current frame; here we are just animating one artist, the image, in
-# each frame
-fig, axs = plt.subplots(1,m,figsize=(16, 4))
+# Create a figure and a list of subplots
+fig, axs = plt.subplots(1, m, figsize=(16, 4))
 
+# Initialize an empty list to store the animated frames
 ims = []
-for i in track(range(10)):
-    
+
+# Create the animation frames
+for i in tqdm(range(Tf)):
+    frame = []
     for ii in range(m):
         ax = axs[ii]
-        ax.imshow(P[i][ii], animated=True)
-
-    if i == 0:
-        for ii in range(m):
-            ax = axs[ii]
-            im = ax.imshow(P[i][0])  # show an initial one first
+        im = ax.imshow(P[i][ii], animated=True)
+        frame.append(im)
     
-    ims.append([im])
+    ims.append(frame)
 
-    
-ani = animation.ArtistAnimation(fig, ims, interval=20, blit=False,
-                                repeat_delay=1000)
+# Create an ArtistAnimation
+ani = animation.ArtistAnimation(fig, ims, interval=50, blit=True)
 
-# To save the animation, use e.g.
-#
-ani.save("movie.gif")
+# To save the animation as a GIF
+ani.save("movie.gif", writer='pillow')
+
 #
 # or
 #
+
 writer = animation.FFMpegWriter(
     fps=15, metadata=dict(artist='Me'), bitrate=1800)
 ani.save("movie.mp4", writer=writer)
 
+# To display the animation
 plt.show()
