@@ -6,6 +6,20 @@ This repository contains code related to the work presented in the paper titled 
 ## Paper Citation
 If you use this code in your work, please cite our paper:
 
+*Bibtex*
+
+@article{Sahu:2023sbf,
+    author = "Sahu, Himanshu and Sen, Kallol",
+    title = "{Quantum Walk Search in Motion}",
+    eprint = "2310.14345",
+    archivePrefix = "arXiv",
+    primaryClass = "quant-ph",
+    month = "10",
+    year = "2023"
+}
+
+
+
 ## Usage
 
 The uses of code are straightforward and only need to run the full Python scripts for different algorithms discussed in the article. The essential libraries such as numpy, scipy and matplotlib are used. 
